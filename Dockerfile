@@ -19,8 +19,6 @@ run sed -i "s|allow_url_fopen = On|allow_url_fopen = Off|g" /etc/php5/apache2/ph
 
 workdir /tmp
 run git clone -b fs https://github.com/pratheeshts0/docker.git
-#workdir /tmp
-#run tar xzvf latest.tar.gz
 workdir /tmp/docker
 
 run cp wp-config-sample.php wp-config.php
